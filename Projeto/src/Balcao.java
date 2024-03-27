@@ -22,9 +22,9 @@ class Balcao {
     public void visualizarPedidos() {
         Node current = head;
         while (current != null) {
-            System.out.println("Nome do Pacote: " + current.data.getNome());
-            System.out.println("Descrição do Conteúdo: " + current.data.getDescricao());
-            System.out.println("Endereço de Destino: " + current.data.getEndereco());
+            System.out.println("Nome do pacote: " + current.data.getNome());
+            System.out.println("Descrição do conteúdo: " + current.data.getDescricao());
+            System.out.println("Endereço de destino: " + current.data.getEndereco());
             current = current.next;
         }
     }
