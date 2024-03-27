@@ -1,6 +1,6 @@
 class Balcao {
-    private Node head;
-    private Node tail;
+    Node head;
+    Node tail;
 
     public Balcao() {
         this.head = null;
@@ -8,12 +8,13 @@ class Balcao {
     }
 
 
-    public void adicionarPacote(Pacote pacote) {
-        Node temp = new Node(pacote);
+    public void adicionarPacote(Pacote data) {
+        Node temp = new Node(data);
         if (head == null) {
             head = temp;
             tail = temp;
         } else {
+            temp.prev = tail;
             tail.next = temp;
             tail = temp;
         }
@@ -25,6 +26,7 @@ class Balcao {
             System.out.println("Nome do pacote: " + current.data.getNome());
             System.out.println("Descrição do conteúdo: " + current.data.getDescricao());
             System.out.println("Endereço de destino: " + current.data.getEndereco());
+            System.out.println();
             current = current.next;
         }
     }
