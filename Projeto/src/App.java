@@ -10,6 +10,18 @@ public class App {
         balcao.adicionarPacote(new Pacote("Pacote 5", "Conteúdo do pacote 5", "Endereço do pacote 5"));
 
         balcao.visualizarPedidos();
+        Deposito deposito = new Deposito();
+
+        deposito.processarPedido(balcao);
+        deposito.processarPedido(balcao);
+        deposito.processarPedido(balcao);
+        deposito.processarPedido(balcao);
+        deposito.processarPedido(balcao);
+        deposito.processarPedido(balcao);
+
+        deposito.visualizarPacotes();
+
+        
 
 
     }

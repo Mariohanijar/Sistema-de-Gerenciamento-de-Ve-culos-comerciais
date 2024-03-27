@@ -37,4 +37,15 @@ public class Deposito {
         }
     }
 
+    public void processarPedido(Balcao balcao) {
+        Node proximoPedido = balcao.head;
+        if (proximoPedido == null) {
+            System.out.println("Balcão vazio!");
+        } else {
+            balcao.head = balcao.head.next;
+            empilharPacote(proximoPedido.data);
+            System.out.println("Pedido processado: " + proximoPedido.data.getNome());
+        }
+    }
+
 }
