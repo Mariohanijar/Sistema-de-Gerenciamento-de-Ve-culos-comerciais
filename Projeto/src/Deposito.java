@@ -15,20 +15,20 @@ public class Deposito {
         }
     }
 
-    public Pacote enviarPacote(){
+    public void enviarPacote(){
         if (head == null) {
             System.out.println("Depósito vazio!");
-            return null;
         } else {
             Pacote pacoteEnviado = head.data;
             System.out.println(pacoteEnviado.getNome() + " enviado!");
             head = head.next;
-            return pacoteEnviado;
+            
         }
     }
 
     public void visualizarPacotes(){
         Node current = head;
+        System.out.println("Pacotes no depósito:");
         while (current != null) {
             System.out.println("Nome do Pacote: " + current.data.getNome());
             System.out.println("Descrição do Conteúdo: " + current.data.getDescricao());

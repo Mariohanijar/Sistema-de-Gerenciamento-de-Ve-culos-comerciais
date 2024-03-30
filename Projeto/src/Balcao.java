@@ -22,6 +22,7 @@ class Balcao {
 
     public void visualizarPedidos() {
         Node current = head;
+        System.out.println("Pacotes no Balcao aguardando processamento:");
         while (current != null) {
             System.out.println("Nome do pacote: " + current.data.getNome());
             System.out.println("Descrição do conteúdo: " + current.data.getDescricao());
