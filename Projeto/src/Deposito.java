@@ -21,6 +21,7 @@ public class Deposito {
             return null;
         } else {
             Pacote pacoteEnviado = head.data;
+            System.out.println(pacoteEnviado.getNome() + " enviado!");
             head = head.next;
             return pacoteEnviado;
         }

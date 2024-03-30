@@ -21,7 +21,13 @@ public class App {
 
         deposito.visualizarPacotes();
 
-        
+        deposito.enviarPacote();
+        deposito.enviarPacote();
+        deposito.enviarPacote();
+        deposito.enviarPacote();
+        deposito.enviarPacote();
+        deposito.enviarPacote();
+    
 
 
     }
